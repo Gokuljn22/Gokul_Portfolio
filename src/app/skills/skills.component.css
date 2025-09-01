@@ -1,0 +1,76 @@
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust for 80px fixed navbar */
+  background-color: #f4f4f4; /* Match Home and Education component background */
+  padding: 20px;
+  padding-top: 80px; /* Prevent content overlap with fixed navbar */
+}
+
+.intro {
+  text-align: center; /* Center-align all content */
+  max-width: 1200px; /* Increased from 800px to fit 3 cards side by side */
+}
+
+h1 {
+  font-size: 3rem; /* Match Home and Education component */
+  color: #333;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem; /* Match Home and Education component */
+  color: #555;
+  margin-bottom: 10px;
+  margin-top: 10px; /* Adjusted for emoji spacing */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem; /* Match p font size in Home and Education */
+  color: #666;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center; /* Ensure card content is centered */
+  width: calc(33.33% - 40px); /* 3 cards per row, accounting for gap */
+  min-width: 250px; /* Minimum width for smaller screens */
+}
+
+.card-emoji {
+  font-size: 2.5rem; /* Emoji size */
+  display: block;
+  margin-bottom: 10px;
+  color: #007bff; /* Match Home component button color for consistency */
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: calc(50% - 20px); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%; /* 1 card per row on small screens */
+  }
+}

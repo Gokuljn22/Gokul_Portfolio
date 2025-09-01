@@ -1,0 +1,118 @@
+.projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust for 80px fixed navbar */
+  background-color: #f4f4f4; /* Match Home and Education component background */
+  padding: 20px;
+  padding-top: 80px; /* Prevent content overlap with fixed navbar */
+}
+
+.intro {
+  text-align: center; /* Center-align cards */
+  max-width: 800px; /* Match Education component width */
+}
+
+h1 {
+  font-size: 3rem; /* Match Home and Education component */
+  color: #333;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem; /* Match Home and Education component */
+  color: #555;
+  margin-bottom: 10px;
+  margin-top: 10px; /* Adjusted for emoji spacing */
+}
+
+p {
+  font-size: 1.2rem; /* Match Home and Education component */
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: left; /* Left-align project details */
+}
+
+ul {
+  list-style-type: disc; /* Bullet points for project details */
+  padding-left: 20px; /* Indent bullets */
+  margin: 0 0 15px 0;
+  font-size: 1.2rem; /* Match p font size */
+  color: #666;
+  line-height: 1.6;
+  text-align: left; /* Left-align list items */
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Increased from 20px for more spacious cards */
+  margin-bottom: 20px; /* Space between cards */
+  text-align: center; /* Center card content, but text is left-aligned */
+  width: 600px; /* Match Education component card width */
+  margin-left: auto; /* Center card horizontally */
+  margin-right: auto;
+}
+
+.card-emoji {
+  font-size: 2.5rem; /* Emoji size */
+  display: block;
+  margin-bottom: 10px;
+  color: #007bff; /* Match Home component button color */
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 12px;
+}
+
+.badge-csharp { background-color: #512bd4; } /* C# purple */
+.badge-aspnet { background-color: #007bff; } /* ASP.NET blue */
+.badge-angular { background-color: #dd0031; } /* Angular red */
+.badge-sql { background-color: #00758f; } /* SQL Server teal */
+.badge-azure { background-color: #0089d6; } /* Azure blue */
+.badge-swagger { background-color: #85ea2d; } /* Swagger green */
+.badge-dotnet { background-color: #512bd4; } /* .NET purple */
+.badge-java { background-color: #f89820; } /* Java orange */
+.badge-mysql { background-color: #00758f; } /* MySQL teal */
+.badge-python { background-color: #3776ab; } /* Python blue */
+.badge-pandas { background-color: #150458; } /* Pandas dark purple */
+.badge-automapper { background-color: #6c757d; } /* AutoMapper gray */
+.badge-fluentvalidation { background-color: #6c757d; } /* FluentValidation gray */
+.badge-matplotlib { background-color: #11557c; } /* Matplotlib dark teal */
+.badge-html { background-color: #e34c26; } /* HTML orange */
+.badge-css { background-color: #264de4; } /* CSS blue */
+
+@media (max-width: 650px) {
+  .card {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px; /* Slightly reduced padding for smaller screens */
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p, ul {
+    font-size: 1rem;
+  }
+}

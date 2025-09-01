@@ -1,0 +1,119 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust for 80px navbar */
+  background-color: #f4f4f4; /* Match other components */
+  padding: 20px;
+  padding-top: 80px; /* Prevent navbar overlap */
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px; /* Match Education component width */
+}
+
+h1 {
+  font-size: 3rem; /* Match other components */
+  color: #333;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem; /* Match other components */
+  color: #555;
+  margin-bottom: 10px;
+  margin-top: 10px; /* Adjusted for emoji spacing */
+  text-align: left; /* Left-align heading */
+}
+
+p {
+  font-size: 1.2rem; /* Match other components */
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left; /* Left-align text */
+}
+
+ul {
+  list-style-type: none; /* No bullets for timeline items */
+  padding-left: 0;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem; /* Match p font size */
+  color: #666;
+  line-height: 1.6;
+  text-align: left; /* Left-align list items */
+}
+
+li {
+  margin-bottom: 12px; /* Spacing for timeline items */
+  display: flex;
+  align-items: flex-start; /* Align emojis with text */
+}
+
+.item-emoji {
+  font-size: 1.5rem; /* Smaller emoji for list items */
+  margin-right: 10px;
+  color: #007bff; /* Match other components */
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Match other components */
+  margin-bottom: 20px;
+  text-align: center; /* Center card itself */
+  width: 600px; /* Match Education component */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-emoji {
+  font-size: 2.5rem; /* Match other components */
+  display: block;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 80%; /* Fluid width for tablets */
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  p, ul {
+    font-size: 1.1rem;
+  }
+  .item-emoji {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding-top: 60px; /* Adjust for smaller navbar */
+    min-height: calc(100vh - 60px);
+  }
+  .card {
+    width: 90%; /* Full width for phones */
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p, ul {
+    font-size: 1rem;
+  }
+  .item-emoji {
+    font-size: 1.2rem;
+    margin-right: 8px;
+  }
+}

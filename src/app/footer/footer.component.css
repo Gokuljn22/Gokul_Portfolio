@@ -1,0 +1,28 @@
+.footer {
+  background-color: #d7d7da; /* Same as navbar */
+  height: 80px; /* Match navbar height */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  width: 100%; /* Full width */
+}
+
+.footer-content {
+  font-size: 1.2rem; /* Match navbar text size */
+  color: #333; /* Same text color */
+}
+p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .footer-content p {
+    font-size: 1rem;
+  }
+  .footer {
+    padding: 15px 0;
+  }
+}

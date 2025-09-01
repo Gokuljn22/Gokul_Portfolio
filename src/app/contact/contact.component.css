@@ -1,0 +1,106 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust for 80px fixed navbar */
+  background-color: #f4f4f4; /* Match Home and Education component background */
+  padding: 20px;
+  padding-top: 80px; /* Prevent content overlap with fixed navbar */
+}
+
+.intro {
+  text-align: center; /* Center-align card */
+  max-width: 800px; /* Match Education component width */
+}
+
+h1 {
+  font-size: 3rem; /* Match Home and Education component */
+  color: #333;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem; /* Match Home and Education component */
+  color: #555;
+  margin-bottom: 10px;
+  margin-top: 10px; /* Adjusted for emoji spacing */
+  text-align: left; /* Left-align heading */
+}
+
+p {
+  font-size: 1.2rem; /* Match Home and Education component */
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left; /* Left-align introduction text */
+}
+
+ul {
+  list-style-type: none; /* No bullets for contact items */
+  padding-left: 0; /* Remove default padding */
+  margin: 0 0 15px 0;
+  font-size: 1.2rem; /* Match p font size */
+  color: #666;
+  line-height: 1.6;
+  text-align: left; /* Left-align list items */
+}
+
+li {
+  margin-bottom: 12px; /* Slightly more spacing for contact items */
+  display: flex;
+  align-items: center;
+}
+
+.item-emoji {
+  font-size: 1.5rem; /* Smaller emoji for list items */
+  margin-right: 10px;
+  color: #007bff; /* Match Home component button color */
+}
+
+a {
+  color: #007bff; /* Match Home component button color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Increased padding to match Projects component */
+  margin-bottom: 20px; /* Space between cards */
+  text-align: center; /* Center card itself */
+  width: 600px; /* Match Education component card width */
+  margin-left: auto; /* Center card horizontally */
+  margin-right: auto;
+}
+
+.card-emoji {
+  font-size: 2.5rem; /* Emoji size for card */
+  display: block;
+  margin-bottom: 10px;
+  color: #007bff; /* Match Home component button color */
+}
+
+@media (max-width: 650px) {
+  .card {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px; /* Slightly reduced padding for smaller screens */
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p, ul {
+    font-size: 1rem;
+  }
+  .item-emoji {
+    font-size: 1.2rem;
+  }
+}
