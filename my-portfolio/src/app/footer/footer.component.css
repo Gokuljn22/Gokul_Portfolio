@@ -1,0 +1,33 @@
+.footer {
+  background-color: #f4f4f4;
+  padding: clamp(15px, 3vw, 20px) 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: clamp(10px, 2vw, 15px) 0;
+  }
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-content p {
+    font-size: 0.8rem;
+  }
+}

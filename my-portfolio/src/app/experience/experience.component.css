@@ -1,0 +1,154 @@
+.experience-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: clamp(15px, 3vw, 20px);
+  padding-top: clamp(70px, 10vw, 80px);
+  margin-bottom: 40px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #333;
+  margin-bottom: clamp(20px, 3vw, 30px);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  color: #555;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: left;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: #555;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0 0 15px 0;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+}
+
+li {
+  margin-bottom: clamp(6px, 2vw, 8px);
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: clamp(20px, 4vw, 30px);
+  margin-bottom: 20px;
+  text-align: center;
+  width: clamp(300px, 90%, 600px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-emoji {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  display: block;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(8px, 2vw, 10px);
+  margin-bottom: 20px;
+}
+
+.badge {
+  display: inline-block;
+  padding: clamp(4px, 1vw, 5px) clamp(8px, 2vw, 10px);
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  color: white;
+  border-radius: 12px;
+}
+
+.badge-csharp { background-color: #512bd4; }
+.badge-dotnet { background-color: #512bd4; }
+.badge-aspnet { background-color: #007bff; }
+.badge-angular { background-color: #dd0031; }
+.badge-sql { background-color: #00758f; }
+.badge-azure { background-color: #0089d6; }
+.badge-automapper { background-color: #6c757d; }
+.badge-fluentvalidation { background-color: #6c757d; }
+.badge-swagger { background-color: #85ea2d; }
+.badge-postman { background-color: #ff6c37; }
+
+@media (max-width: 900px) {
+  .experience-section {
+    padding-top: 70px;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-section {
+    padding-top: 60px;
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+  .badges {
+    gap: 8px;
+  }
+  .badge {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  p, ul {
+    font-size: 0.9rem;
+  }
+  .card-emoji {
+    font-size: 1.8rem;
+  }
+}

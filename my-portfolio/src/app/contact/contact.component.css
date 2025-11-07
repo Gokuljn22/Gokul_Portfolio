@@ -1,0 +1,171 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: clamp(15px, 3vw, 20px);
+  padding-top: clamp(70px, 10vw, 80px);
+  margin-bottom: 40px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #333;
+  margin-bottom: clamp(20px, 3vw, 30px);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  color: #555;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0 15px 0;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+}
+
+li {
+  margin-bottom: clamp(8px, 2vw, 12px);
+  display: flex;
+  align-items: center;
+}
+
+.item-emoji {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin-right: clamp(8px, 2vw, 10px);
+  color: #007bff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: clamp(20px, 4vw, 30px);
+  margin-bottom: 20px;
+  text-align: center;
+  width: clamp(300px, 90%, 600px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.card-emoji {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  display: block;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+button.btn {
+  background-color: #007bff; /* Blue background */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+button.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+button.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+@media (max-width: 900px) {
+  .contact-section {
+    padding-top: 70px;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding-top: 60px;
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p, ul {
+    font-size: 0.9rem;
+  }
+  .item-emoji {
+    font-size: 1.1rem;
+    margin-right: 6px;
+  }
+  .card-emoji {
+    font-size: 1.8rem;
+  }
+  input, textarea {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,42 @@
+<div class="app-container">
+  <nav class="navbar">
+    <div class="navbar-brand">Gokul Nagaraj</div>
+    <button class="hamburger" (click)="toggleMenu()">☰</button>
+    <div class="nav-links" [ngClass]="{'open': isMenuOpen}">
+      <a href="#home" [ngClass]="{'active': activeSection === 'home'}" (click)="scrollTo('home'); closeMenu()">Home</a>
+      <a href="#about" [ngClass]="{'active': activeSection === 'about'}" (click)="scrollTo('about'); closeMenu()">About</a>
+      <a href="#education" [ngClass]="{'active': activeSection === 'education'}" (click)="scrollTo('education'); closeMenu()">Education</a>
+      <a href="#skills" [ngClass]="{'active': activeSection === 'skills'}" (click)="scrollTo('skills'); closeMenu()">Skills</a>
+      <a href="#projects" [ngClass]="{'active': activeSection === 'projects'}" (click)="scrollTo('projects'); closeMenu()">Projects</a>
+      <a href="#experience" [ngClass]="{'active': activeSection === 'experience'}" (click)="scrollTo('experience'); closeMenu()">Experience</a>
+      <a href="#achievements" [ngClass]="{'active': activeSection === 'achievements'}" (click)="scrollTo('achievements'); closeMenu()">Achievements</a>
+      <a href="#contact" [ngClass]="{'active': activeSection === 'contact'}" (click)="scrollTo('contact'); closeMenu()">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home" class="home-section">
+    <div class="intro">
+      <div class="card">
+        <h1>Gokul JN</h1>
+        <h2>[ .NET Full Stack Developer ]</h2>
+        <img src="2025_01_18_09_45_IMG_7406.JPG" alt="Gokul JN Profile" class="profile-img">
+        <p>
+          Dynamic .NET Full Stack Developer with hands-on experience in building scalable web applications using C#, ASP.NET Core, Angular, and SQL Server. Proficient in clean architecture, RESTful APIs, Azure DevOps, and modern development practices. Seeking to leverage technical expertise and problem-solving skills to deliver innovative software solutions in a progressive organization.
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" (click)="scrollTo('projects')" class="btn btn-primary">View Projects</a>
+          <a href="#contact" (click)="scrollTo('contact')" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-about id="about"></app-about>
+  <app-education id="education"></app-education>
+  <app-skills id="skills"></app-skills>
+  <app-projects id="projects"></app-projects>
+  <app-experience id="experience"></app-experience>
+  <app-achievements id="achievements"></app-achievements>
+  <app-contact id="contact"></app-contact>
+  <app-footer></app-footer>
+</div>
